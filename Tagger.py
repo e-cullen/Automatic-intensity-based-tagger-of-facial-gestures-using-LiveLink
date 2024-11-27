@@ -7,7 +7,7 @@ FILE = ' .csv'
 df = pd.read_csv(FILE)
 
 # Input your desired blendshape to be tagged, ensure the capitalization matches the column name in the CSV
-chosen_unidirectional_blendshape = 'BrowDownRight'
+chosen_unidirectional_blendshape = ''
 # Input your desired intensity threshold value, e.g., 0.3
 chosen_threshold = 
 

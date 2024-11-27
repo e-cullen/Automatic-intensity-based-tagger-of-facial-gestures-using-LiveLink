@@ -9,5 +9,6 @@ For just the automatic intensity-based tagger, use Tagger.py
 
 
 For a full work-flow to allow integration with ELAN:
-1. zero_timestamping_LiveLinkOutput.py is the first step. This re-formats the Live Link output for interoperable column names between files and adds a 'Time Elapsed' column which is starts as 0 hours, 0 minutes, 0 seconds, 0 frames, 0 milliseconds. This timestamping step is necessary for integrating the automatic tags as annotations onto ELAN tiers.
+1. zero_timestamping_LiveLinkOutput.py is the first step. This re-formats the Live Link output for interoperable column names between files and adds a 'Time Elapsed' column which is starts as 0 hours, 0 minutes, 0 seconds, 0 frames, 0 milliseconds. This timestamping step allows for interoperable timestamping with ELAN for cross-checking a video to its tagged csv.
 2. Use Tagger.py
+3. Import the tagged csv. file to ELAN as a tier with annotations for time-aligned automatically intensity-based annotations of facial gestures.
